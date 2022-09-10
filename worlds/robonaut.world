@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+<world name="robonaut_world">
+
+   <!--  Ground plane -->
+   <include>
+      <uri>model://ground_plane</uri>
+   </include>
+
+   <!--  Robonaut -->
+   <include>
+      <uri>model://robonaut</uri>
+   </include>
+
+   <!--  Four ceiling lights -->
+   <light type="point" name="point_light_0">
+      <pose>5 5 10 0 0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.5</constant>
+        <linear>0</linear>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+   <light type="point" name="point_light_1">
+      <pose>5 -5 10 0 0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>0</linear>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+   <light type="point" name="point_light_2">
+      <pose>-5 -5 10 0 0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>0</linear>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+   <light type="point" name="point_light_3">
+      <pose>-5 5 10 0 0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.9</constant>
+        <linear>0</linear>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+   <!-- Two front floor lights -->
+   <light type="point" name="point_light_back">
+      <pose>0 5 1 0 0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.5</constant>
+        <linear>0</linear>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+   <light type="point" name="point_light_front">
+      <pose>0 -5 1 0 0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
+      <attenuation>
+        <range>20.0</range>
+        <constant>0.5</constant>
+        <linear>0</linear>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+</world>
+</sdf>
